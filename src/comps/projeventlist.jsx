@@ -20,7 +20,7 @@ export default function ProjEventList() {
                     imageFirst={true}
                 />
                 <ProjectEventItem 
-                    header="Our Projects"
+                    header = "Janurary 2025"
                     subheader="January 2025"
                     para="Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec dui purus, porta quis nulla nec, scelerisque ultricies purus. Cras tempor cursus lectus at gravida. Ut sed elit varius quam tincidunt rhoncus sed eget lectus. Maecenas et nulla rhoncus, vulputate quam quis, faucibus augue. Sed vitae semper lacus. Suspendisse dolor ligula, laoreet a nunc eu, eleifend congue leo. Mauris id pretium ante, quis efficitur magna. Etiam pretium rutrum turpis, vel vehicula enim efficitur ac. Proin velit est, feugiat ac pretium sed, sodales id eros. Aenean nunc metus, imperdiet non condimentum vel, euismod at leo. Mauris porttitor metus eget felis convallis, eu tristique leo posuere. Pellentesque ornare tellus rutrum dolor accumsan, sit amet molestie mauris auctor. Aliquam volutpat nisl quis velit imperdiet volutpat. Etiam euismod urna non sodales porta."
                     imageFirst={true}
@@ -68,4 +68,4 @@ const ProjectEventItem = ({header, subheader, para, imageFirst}) => {
         </div>
       </section>
     );
-  };
+};
