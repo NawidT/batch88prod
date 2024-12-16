@@ -30,42 +30,39 @@ export default function ProjEventList() {
         </div>
         );
 }
+const ProjectEventItem = ({ header, subheader, para, imageFirst }) => {
+  return (
+    <section className="bg-[#f9f7e8] py-12">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center">
+        {/* Left Section: Text */}
+        <div className="lg:w-2/3 space-y-4">
+          <h1 className="text-black text-5xl font-bold">{header}</h1>
+          <h2 className="text-black text-xl font-semibold">{subheader}</h2>
+          <p className="text-black text-lg leading-relaxed">{para}</p>
 
-const ProjectEventItem = ({header, subheader, para, imageFirst}) => {
-    return (
-      <section className="bg-[#f9f7e8] py-12">
-        <div className="container mx-auto flex flex-col lg:flex-row items-center">
-          {/* Left Section: Text */}
-          <div className="lg:w-2/3 space-y-4">
-            <h1 className="text-black text-5xl font-bold">{header}</h1>
-            <h2 className="text-black text-xl font-semibold">{subheader}</h2>
-            <p className="text-black text-lg leading-relaxed">
-                {para}
-            </p>
-  
-            {/* Buttons */}
-            <div className="flex space-x-4">
-              <button className="bg-teal-500 text-white py-2 px-6 rounded-full font-bold hover:bg-teal-600 transition">
-                CONTRIBUTE
-              </button>
-              <button className="border-2 border-black text-black py-2 px-6 rounded-full font-bold hover:bg-black hover:text-white transition">
-                REPORTS
-              </button>
-              <button className="border-2 border-black text-black py-2 px-6 rounded-full font-bold hover:bg-black hover:text-white transition">
-                GALLERY
-              </button>
-            </div>
-          </div>
-  
-          {/* Right Section: Icon/Image */}
-          <div className="lg:w-1/3 flex justify-center mt-8 lg:mt-0">
-            <img
-              src={checklisticon}
-              alt="Event Icon"
-              className="w-2/3 lg:w-1/2"
-            />
+          {/* Buttons */}
+          <div className="flex space-x-4">
+            <button className="bg-[#800000] text-white py-2 px-6 rounded-full font-bold hover:bg-[#9b0000] transition">
+              CONTRIBUTE
+            </button>
+            <button className="border-2 border-[#800000] text-[#800000] py-2 px-6 rounded-full font-bold hover:bg-[#800000] hover:text-white transition">
+              REPORTS
+            </button>
+            <button className="border-2 border-[#800000] text-[#800000] py-2 px-6 rounded-full font-bold hover:bg-[#800000] hover:text-white transition">
+              GALLERY
+            </button>
           </div>
         </div>
-      </section>
-    );
+
+        {/* Right Section: Icon/Image */}
+        <div className="lg:w-1/3 flex justify-center mt-8 lg:mt-0">
+          <img
+            src={checklisticon}
+            alt="Event Icon"
+            className="w-2/3 lg:w-1/2"
+          />
+        </div>
+      </div>
+    </section>
+  );
 };

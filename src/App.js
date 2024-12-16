@@ -57,6 +57,40 @@ export const Navbar = () => {
   );
 };
 
+export const MissionSection = () => {
+  return (
+    <section className="bg-[#f9f7e8] py-12">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center">
+        {/* Text on the left */}
+        <div className="lg:w-1/2 text-left space-y-4">
+          <h1 className="text-black text-5xl font-bold">Our Mission</h1>
+          <p className="text-black text-lg leading-relaxed">
+            At Batch-88 Foundation, our mission is to empower communities
+            through sustainable initiatives, fostering education, and nurturing
+            opportunities for growth and development. We believe in the power of
+            collaboration, compassion, and innovation to create lasting positive
+            change in the lives of those we serve.
+          </p>
+          <Link to="/about">
+            <button className="bg-[#800000] text-white font-bold py-2 px-6 rounded-lg hover:bg-[#9b0000]">
+              About Us
+            </button>
+          </Link>
+        </div>
+
+        {/* Icon on the right (1.5x bigger than w-2/3) */}
+        <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
+          <img
+            src={require("../src/assets/mission.png")}
+            alt="Mission Icon"
+            className="w-full lg:w-full"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export const ProjectsSection = ({
   header,
   para,
