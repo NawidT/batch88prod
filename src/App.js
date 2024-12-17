@@ -32,7 +32,7 @@ function App() {
 
 export const Navbar = () => {
   return (
-    <nav className="bg-[#f9f7e8] py-4">
+    <nav className="bg-white py-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           {/* Batch-22 Logo */}
@@ -59,7 +59,7 @@ export const Navbar = () => {
 
 export const MissionSection = () => {
   return (
-    <section className="bg-[#f9f7e8] py-12">
+    <section className="bg-white py-12">
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         {/* Text on the left */}
         <div className="lg:w-1/2 text-left space-y-4">
@@ -99,7 +99,7 @@ export const ProjectsSection = ({
   imageFirst,
 }) => {
   return (
-    <section className="bg-[#f9f7e8] py-12">
+    <section className="bg-white py-12">
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         {imageFirst && (
           <div className="lg:w-1/2 flex justify-center mt-8 lg:mt-0">
@@ -146,7 +146,7 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="bg-[#f9f7e8] py-12">
+    <section className="bg-white py-12">
       <div className="container mx-auto text-center">
         {/* Title Section */}
         <h2 className="text-black text-sm font-bold uppercase">Testimonials</h2>
@@ -180,7 +180,7 @@ export const FeaturedOn = () => {
   ];
 
   return (
-    <section className="bg-[#f9f7e8] py-8">
+    <section className="bg-white py-8">
       <div className="container mx-auto text-center">
         {/* Title */}
         <h2 className="text-black font-bold text-lg uppercase mb-4">
@@ -188,7 +188,7 @@ export const FeaturedOn = () => {
         </h2>
 
         {/* Logos Section */}
-        <div className="bg-[#f9f7e8] py-8 px-4 rounded-lg flex justify-around items-center space-x-6">
+        <div className="bg-white py-8 px-4 rounded-lg flex justify-around items-center space-x-6">
           {brands.map((brand, index) => (
             <div key={index} className="flex-shrink-0">
               <img
@@ -206,7 +206,7 @@ export const FeaturedOn = () => {
 
 export const Resources = () => {
   return (
-    <section className="bg-[#f9f7e8] py-12">
+    <section className="bg-white py-12">
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
         {/* Left Section: Text and Buttons */}
         <div className="lg:w-1/2 text-left space-y-6">
